@@ -1,12 +1,14 @@
-puts "\n\nHello World !\n\n"
+puts "\nHello World !\n"
 
 BEGIN {
-	puts "This is before sequential execution of program begins"
+	puts "\nThis is before sequential execution of program begins\n"
 }
-
 
 END {
-	puts "This is before a ruby script stops execution"
+	puts "\nThis is before a ruby script stops execution\n"
 }
 
-puts "\n\nHello World Again!\n\n"
+puts "\nHello World Again!\n"
+
+puts "\nThe encoding for this file is... "
+puts __ENCODING__
